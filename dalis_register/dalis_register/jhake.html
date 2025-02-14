@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jungle Login & Register</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.js">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <button type="submit" class="submit-btn">SUBSCRIBE</button>
+            </form>
+            
+            <form id="register" class="input-group" onsubmit="handleRegister(event)">
+                <input type="text" id="reg-username" class="input-field" placeholder="Username" required>
+                <input type="email" id="reg-email" class="input-field" placeholder="Email" required>
+                <input type="password" id="reg-password" class="input-field" placeholder="Enter Password" required>
+                <button type="submit" class="submit-btn">Register</button>
+            
+            </form>
+        </div>
+    </div>
+   
+</body>
+</html>
